@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun! ✨</title>
+    <!-- Menghubungkan Google Fonts untuk tipografi yang estetik -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Canvas untuk efek konfeti -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Wadah Utama -->
+    <main class="container">
+        <!-- Layar Pembuka (Amplop/Kado) -->
+        <div class="envelope-card" id="intro-card">
+            <div class="icon-bounce">🎁</div>
+            <h2>Ada pesan spesial untukmu...</h2>
+            <p>Klik tombol di bawah untuk membukanya</p>
+            <button id="open-btn" class="btn-primary">Buka Ucapan</button>
+        </div>
+
+        <!-- Kartu Ucapan Utama (Awalnya tersembunyi) -->
+        <div class="birthday-card hidden" id="main-card">
+            <div class="badge">✨ Special Day ✨</div>
+            
+            <!-- Ganti nama di bawah ini -->
+            <h1 class="title">Happy Birthday,<br><span id="recipient-name">Sahabatku!</span></h1>
+            
+            <!-- Foto kenangan (Opsional: ganti src dengan nama file fotomu) -->
+            <div class="photo-frame">
+                <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=500&q=80" alt="Foto Ulang Tahun">
+            </div>
+
+            <!-- Pesan Ucapan dengan Efek Ketik -->
+            <p class="message" id="typed-message"></p>
+
+            <!-- Tombol Interaktif -->
+            <div class="actions">
+                <button id="wish-btn" class="btn-secondary">Tiup Lilin 🎂</button>
+                <button id="confetti-btn" class="btn-outline">Rayakan Lagi 🎉</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Menghubungkan file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
